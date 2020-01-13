@@ -1,0 +1,246 @@
+* {box-sizing: border-box; font: 16px Gill Sans, sans-serif;}
+
+body{
+	margin: 0; 
+	height: 100%; 
+	background-color: black;
+	color: #00FF00;
+}
+		/* global link colors */
+		a{text-decoration: none; color: #00FF00;}
+		.sufokantehead a, .workshead a, .posthead a, #title a, .FootNav a{color: black;}
+		/* global border color */
+		.stories, .about, .resume, #title, #kabanata1, .post, .post1,#center #img_vid{ border: 1px solid #00FF00;}
+		/* global header color */
+		.sufokantehead, .workshead, .posthead, #title, .FootNav{background-color: #00FF00;}
+
+/* Navigator */
+.topnav {
+  position: relative;
+  width: 100%;
+  height: 50px;
+  top: 0%;
+  z-index: 1;
+}
+	.topnav .menu{
+		cursor: pointer;
+		float: left;
+		display: none;
+		margin: 5px 10px;
+	}
+		@media (max-width: 1200px) {.topnav .menu {display: block}}
+		.topnav .menu div{
+			width: 35px;
+			height: 5px;
+			background-color: #00FF00;
+			margin: 5px 0;
+		}
+	.topnav .home, .sufokante{
+	  float: right;
+	  display: block;
+	  padding: 14px 16px;
+	  text-decoration: none;
+	}
+
+	.topnav a:hover {text-decoration: underline;}
+/* Content nga gisulod ang .Left, .Center, og .Right */
+.content {
+  background-size: cover;
+  position: relative;
+}
+	.sufokantehead, .workshead, .posthead{
+		width: 100%;
+		padding: 10px;
+		text-align: center;
+	}
+.left{
+	width: 20%;
+	position: absolute;
+	font-size: 90%;
+}
+	@media (max-width: 1200px) {
+	    .left {
+	         display: none;
+	    }
+	}
+	.stick{position: fixed; top: 0;}
+		
+		h3{text-align: left;}
+		ul{list-style: none;}
+		ul li{text-align: left;}
+		ul li a:hover{text-decoration: underline;}
+#center{
+	width: 50%;
+	margin: 5px;
+	position: absolute;
+	left: 20%;
+}
+@media (max-width: 1200px) {
+    #center {
+        width: 70%;
+        left: 0;
+    }
+}
+@media (max-width: 900px) {
+    #center {
+        width: 95%;
+        margin: 10px;
+    }
+}
+		#center .stories{
+			padding: 10px;
+		}
+		#center .Astral{
+			 float: left;
+			 padding: 10px;
+			 width: 200px;
+		}
+				#myImg {
+				  border-radius: 5px;
+				  cursor: pointer;
+				  transition: 0.3s;
+				}
+
+				#myImg:hover {opacity: 0.7;}
+		#center .about{
+			font-size: 15px;
+			width: 100%;
+			padding: 10px;
+			text-align: justify;
+		}
+		.resume{
+			position: relative;
+			width: 100%;
+			list-style-position: inside;
+			padding: 40px;	
+		}
+
+			.infohead{text-align: center;}
+			.resume h1{
+				text-transform: uppercase;
+				letter-spacing: normal;
+				text-align: center;
+				font-size: 20px;
+			}
+				.infohead{
+					padding-top: 60px;
+				}
+				.resume img{
+					width: 30%;
+					height: 30%;
+					float: right;
+				}
+/* Kabanata 1-10*/	
+            #center #title{
+              color: black;
+              text-align: center;
+            }
+            #center #kabanata1{
+              margin-top: 10px;
+              padding: 10px;
+            }
+            #center #kabanata1 a{
+            	text-decoration: none;
+            	font-weight: bold;
+            	float: right;
+            }
+.right{
+	position: absolute;
+	left: 73%;
+	width: 25%;
+	margin: 5px;
+}
+	@media (max-width: 900px) {
+	    .right {
+	    	display: none;
+	    }
+	}
+	.sticky{
+	position: fixed;
+	top: 0;
+	}
+#toggle{
+	width: 20%;
+	height: auto;
+}
+		/* The switch - the box around the slider */
+		.switch {
+		  position: relative;
+		  display: inline-block;
+		  width: 100%;
+		   height: 34px;
+		}
+
+		/* Hide default HTML checkbox */
+		.switch input {display:none;}
+		/* The slider */
+		.slider {
+		  position: absolute;
+		  cursor: pointer;
+		  top: 0;
+		  left: 0;
+		  right: 0;
+		  bottom: 0;
+		  background-color: #00FF00;
+		}
+
+		.slider:before {
+		  position: absolute;
+		  content: "";
+		  height: 26px;	
+		  width: 40%;
+		  left: 8px;
+		  bottom: 4px;
+		  background-color: white;
+		  -webkit-transition: .4s;
+		  transition: .4s;
+		}
+
+		input:checked + .slider {
+		   background-color: darkgreen;
+		}
+
+		input:checked + .slider:before {
+		  -webkit-transform: translateX(100%);
+		  -ms-transform: translateX(100%);
+		  transform: translateX(90%);
+		}
+
+		.right .post{
+			width: 100%;
+		}
+		.right .post1{
+			width: 100%;
+			margin-top: 10px;
+		}
+			.right .poster{
+				text-align: left;
+			}
+			.right p{
+				padding: 10px;
+				text-align: justify;
+			}
+			.right .smallpic{
+				width: 50px;
+				height: 50px;
+				border-radius: 50px;
+				float: left;
+				margin-left: 10px;
+				margin-right: 10px;
+			}
+		.right .goto{text-decoration: none;} .right .goto:hover{text-decoration: underline;}
+		.right .social{float: right;}
+		.right .goto{float: left;}
+		.Copyright{text-align: center;}
+		.FootNav{
+			width: 100%;
+		}
+		.FootNav a{
+				text-decoration: none;
+				text-align: center;
+				border-left: 1px solid black;
+				padding:3px;	
+			}
+			.FootNav a:hover{
+				text-decoration: underline;
+			}
