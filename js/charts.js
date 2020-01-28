@@ -27,7 +27,6 @@ var options1 = {
 	animationEnabled: true,
 	colorSet: "blueShades",
 	title: {
-		text: "Reading",
 		fontSize:30,
 		fontColor: "blue",
 
@@ -51,7 +50,6 @@ var options2 = {
 	animationEnabled: true,
 	colorSet: "redShades",
 	title: {
-		text: "Learning Asian Languages",
 		fontSize:30,
 		fontColor: "darkred",
 
@@ -73,7 +71,6 @@ var options = {
 	animationEnabled: true,
 	colorSet: "greenShades",
 	title: {
-		text: "Writing",
 		fontSize:30,
 		fontColor: "green",
 
