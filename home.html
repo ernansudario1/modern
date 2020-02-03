@@ -6,286 +6,249 @@
  	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="bootstrap.min.css">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
-  	<script src="jquery.min.js"></script>
-  	<script src="popper.min.js"></script>
-  	<script src="bootstrap.min.js"></script>
 
+  	<link rel="stylesheet" type="text/css" href="http://www.1001fonts.com/digital+clock-fonts.html">
   	<style type="text/css">
-  	@media (max-width: 900px) {
-	    .col-sm-2 {
-	         display: none;
-	    }
-	}
-  	body{
-  		background-color: black;
-  		color: white;
-  		position: relative;
-  		} 
-   	.affix {
-   		top: 0;
-   		position: fixed;
-    	z-index: 1;
-	}
-  	a{
-  		color: white;
-  	}
-  	.navbar{
-  		background-color: black;
-  		color: black;
-  	}
-  	audio, video, img, .postcontent{
-  		border: 1px solid white;
-  	}
-  	.texthead{background-color: white; border: 1px solid white;}
-  	.atexthead{color: black;}
+  		h1{
+  			font-family: 'Felix Titling', Felix, san-serif;
+  		}
+  		h2{
+  			font-family: 'Tekton Pro', Tekton, san-serif;
+  		}
 
-  	/* Light Mode */
-  	.lightmode{color: black;background-color: white;}
-  	.alightmode{color: black;}
-  	.navlightmode{color: black;background-color: white;}
-  	.medialightmode{border: 1px solid gray;}
-  	.headlightmode{background-color: black; border: 1px solid black;}
-  	.aheadlightmode{color: white;}
-
-  </style>
-  <script>
-  	$(document).ready(function(){
-  		$("i").click(function(){
-  			$("body").toggleClass("lightmode");
-  			$("a").toggleClass("alightmode");
-  			$(".navbar").toggleClass("navlightmode");
-  			$(".texthead").toggleClass("headlightmode");
-  			$(".atexthead").toggleClass("aheadlightmode");
-  			$("audio, video, img, .postcontent").toggleClass("medialightmode")
-
-	  });
-	});
-  </script>
-</head>
-<body data-spy="scroll" data-target="#myScrollspy" data-offset="1">
-	<div class="container-fluid">
-		<nav class="navbar navbar-expand-sm">
-				<a class="navbar-brand" href="#">Sufokante</a>
-				<ul class="nav navbar-nav ml-auto">
-					<li class="nav-item active">
-						<a class="nav-link" href="#">Home</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="#">Profile</a>
-					</li>
-				</ul>
+  		.coverphoto{
+  			height: 300px;
+  		}
+  		.profilepic{
+  			position: relative;
+  			background-image: url(images/jpeg/sufo.jpg); 
+  			background-size: cover;
+  			width: 150px;
+  			height: 150px;
+  			margin: auto;
+  			top:75%;
+  			border: 5px solid white;
+  		}
+  		#coverphoto{
+  			background-image: url(images/jpeg/coverphoto.jpg);
+  			background-position: top;
+  			background-size: cover;
+  			height: 250px;
+  		}
+  		.name{
+  			height: 140px;
+  		}
+  		.myname{
+  			position: relative;
+  			top: 70%;
+  		}
+  		.card {
+  			box-shadow: 5px 10px 18px #888888;
+  			border-radius: 0px;
+  		}
+  	</style>
+	</head>
+  	<body class="">
+  		<div class="container-fluid">
+		<nav class="navbar navbar-expand-sm p-0 ">
+			<ul class="nav navbar-nav mr-auto ">
+				<li class="nav-item active">
+					<a class="nav-link text-dark" href="home.html"><img src="images/png/logo.png" width="100" class="m-auto"></a>
+				</li>
+			</ul>
+			
+			<ul class="nav navbar-nav ml-auto ">
+				<li class="nav-item">
+					<a class="nav-link text-dark" href="profile.html">Home</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link text-dark" href="profile.html">Background</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link text-dark" href="profile.html">Skills</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link text-dark" href="profile.html">Interest and Hobbies</a>
+				</li>
+			</ul>
 		</nav>
-	</div>
-	<div class="container-fluid">
+		</div>
+		<div class="container-fluid mt-2">
+			<div class="container">
+				<div id="coverphoto" class="container border" style="box-shadow: 5px 10px 18px #888888;">
+				<div class="profilepic rounded-circle"></div>
+			</div>
+			<div class="name container">
+				<h2 class="myname text-dark text-center">Ernan Sudario</h2>
+			</div>
+			<div class="Aboutsection text-center m-auto pt-3" style="line-height: 25px;">
+				<p><span class="p-2"><i class="fas fa-envelope"></i> ernan.sudario@informatics.edu.ph</span>
+				<span class="p-2"><i class="fab fa-houzz"></i> Paknaan Mandaue Cebu City</span>
+				<span class="p-2"><i class="fas fa-phone"></i> +639975072726</span></p>
+			</div>
+				<h1 class="text-center pt-3">Educational Background</h1>
+			<div class="text-center row">
+				<div class="col-lg-4 mb-3">
+					<div class="card mb-3">
+						<div class="card-body p-0">
+						    <h2 class="card-title text-center" style="background-color: silver;">Tertiary</h2>
+							<div class="card-text"><p>2018-Present Informatics College Cebu </p> 
+							<p>ICT-Programming (GRADUATING)</p>
+							<p class="card-text pb-3">Dance Club Member and SSG Officer (PRO)</p></div>
+						</div>
+					</div>
+					<div class="card mb-3">
+					  	<div class="card-body p-0" >
+						   	<h2 class="card-title text-center" style="background-color: silver;">Secondary</h2>
+							<p class="card-text">2015-2018<br>  Paknaan National HighSchool</p> 
+							<p class="card-text pb-3">Drafting and Futsal member</p>
+						</div>
+					</div>
+					<div class="card mb-3">
+						<div class="card-body p-0" >
+						   	<h2 class="card-title text-center" style="background-color: silver;">Primary</h2>
+							<p class="card-text">2006-2011<br> Larmen De Guia Memorial College</p> 
+							<p class="card-text pb-3">2011-2015<br> Paknaan National High School</p>
+						 </div>
+					</div>
+				</div>
+				<div class="col-lg-8 mb-3">
+					<div class="border mb-3" style="box-shadow: 5px 10px 18px #888888;">
+						<img src="images/png/pin.png" class="mt-3" width="55px">
+						<h1 class="">Special Skills</h1>
+						<ul style="list-style-type: none;">
+							<li>Proficient in Microsoft (PowerPoint, Word, Access and Excel)</li>
+							<li>Knowledgeable in HTML/HTML5 and CSS/CSS3</li>
+							<li>Knowledgeable in C, C++, JavaScript, PHP and MySQL</li>
+							<li>Basic Knowledge in Adobe (Photoshop, Illustrator, and Flash)</li>
+							<li>Basic Knowledge in Bootstrap and AngularJS</li>
+							<li>Computer Literate</li>
+						</ul>
+					</div>
+					<div class="border p-3 " style="box-shadow: 5px 10px 18px #888888;">
+						<img src="images/png/pin.png" width="55px">
+						<h1 class="text-center">Experience</h1>
+						<div class="pr-5 ml-5">
+						<p>1 year of being youth officer in Zone tangkong Paknaan Mandaue City as Secretary </p>
+						<p>Supreme student council officer in informatics college cebu as Public Relations OfficerO</p>
+						<p>Attended in leadership conference</p>
+						</div>
+					</div>
+				</div>
+				<br>
+			</div>
+			<br>
+		<br>
+		<h1 class="text-center p-3">Interest and Hobbies</h1>
+		<br>
 		<div class="row">
-			<nav class="col-sm-2" id="myScrollspy">
-				<ul class="nav nav-pills flex-column flex-row" data-spy="affix" data-offset-top="205">
-					<h1>Home</h1>
-					<li class="nav-link p-1"><a href="#sufokanteworks ">Sufokante's Works</a></li>
-					<li class="nav-link p-1"><a href="#aboutsufokante">About Sufokante</a></li>
-					<li class="nav-link p-1"><a href="#Resume">Resume</a></li>
-					<li class="nav-link p-1"><a href="#KabanataI">Kabanata I: Libro at<br> Kwintas</a></li>
-					<li class="nav-link p-1"><a href="#KabanataII">Kabanata II: Trahedya</a></li>
-					<li class="nav-link p-1"><a href="#KabanataIII">Kabanata III: Astral <br>Plane</a></li>
-					<li class="nav-link p-1"><a href="#KabanataIV">Kabanata IV: Daga</a></li>
-					<!--<li><a href="KabanataV.html">Kabanata V: </a></li>
-					<li><a href="KabanataVI.html">Kabanata VI: </a></li>
-					<li><a href="KabanataVII.html">Kabanata VII: </a></li>
-					<li><a href="KabanataVIII.html">Kabanata VIII: </a></li>
-					<li><a href="KabanataIX.html">Kabanata IX: </a></li>
-					<li><a href="KabanataX.html">Kabanata X: </a></li>-->
-					<h3>Poems</h3>
-					<li class="nav-link p-1"><a href="#Sana">Sana</a></li>
-					<li class="nav-link p-1"><a href="#Elastiko">Elastiko</a></li>
-					<li class="nav-link p-1"><a href="#tadhana">Tadhana o Paghanga</a></li>
-					<li class="nav-link p-1"><a href="#Bulalakaw">Bulalakaw</a></li>
-					<li class="nav-link p-1"><a href="#kalikasan">Kalikasan</a></li>
-					<li class="nav-link p-1"><a href="#Takbo">Takbo ng Panahon</a></li>
-					<li class="nav-link p-1"><a href="#ulan">Ulan</a></li>
-					<li class="nav-link p-1"><a href="#Pagkamuhi">Pagkamuhi</a></li>
-					<li class="nav-link p-1"><a href="#Sufokante">Sufokante</a></li>
-					<!--
-					<li class="nav-item"><a href="#About">About Poems</a></li>
-					<h3>Diary</h3>
-					<li class="nav-item"><a href="Day1.html">Day 1</a></li>
-					<li><a href="Day2.html">Day 2</a></li>
-					<li><a href="Day3.html">Day 3</a></li>
-					<li><a href="Day4.html">Day 4</a></li>
-					<li><a href="Day5.html">Day 5</a></li>
-					<li><a href="Day6.html">Day 6</a></li>
-					<li><a href="Day7.html">Day 7</a></li>
-					<li><a href="Day8.html">Day 8</a></li>
-					<li><a href="Day9.html">Day 9</a></li>
-					<li><a href="Day10.html">Day 10</a></li>-->
-				</ul>
-			</nav>
-			<div class="col-sm-7 text-justify">
-			<div id="sufokanteworks">
-				<div class="texthead"><h6 class="text-center border p-2 mb-0"><a href="KabanataI.html" class="atexthead">Sufokante's Works</a></h6></div>
-				<div class="postcontent p-3">
-				<h4>Works by Sufokante</h4><br>
-				<p>1 Published Story</p>
-				<img src="images/jpeg/AstralTravel.jpg" class="Astral" alt="Astral Travel" id="myImg" style="float: left; width: 200px; margin: 10px;">
-				<h5>Astral Travel</h5>
-				<p>Ang mga magulang ni Scott ay isa sa tinatawag na "Astral Traveler." Sila ay may kakayahang makalabas mula sa kanilang pisikal na katawan at largadong nakapaglalakbay sa lugar na tinatawag na "Astral Plane."</p><br><p>Ngunit dahil sa aksidenteng nangyari dulot ng mga masasamang nilalang ay binawian sila ng buhay at sa kaarawan mismo ng kanilang anak. Dahil dito ay hindi na nila nagawa pang ibigay ang regalo nilang Libro at kwintas.</p><p>Published at Wattpad</p><br>
-				<p>Ito yung kauna-unahang kwento na nagawa ko noong ako ay nasa high-school pa lamang. Kahit ngayon ay hindi pa ito tapos at wala pa ring balak na tapusin, dahil siguro ay nagbago na ang aking hilig at nawalan na ng oras sa pagsusulat. Ngunit babalik at babalik pa rin ako sa mundo ng panitikan. Hindi man ngayon pero pakiramdam ko ay malapit na itong dadating.</p>
+		<div class="col-lg-4 mb-4">
+			<div class="">
+				<h1>Dancing</h1>
+				Contemporary/Lyrical
+				<div class="progress">
+				  <div class="progress-bar" role="progressbar" aria-valuenow="70"
+				  aria-valuemin="0" aria-valuemax="75" style="width:75%">
+				    Advanced
+				  </div>
 				</div>
-			</div>
-			<br>
-			<div id="aboutsufokante">
-				<div class="texthead"><h6 class="text-center border p-2 mb-0"><a class="atexthead" href="Sufokante.html">About Sufokante</a></h6></div>
-				<div class="postcontent p-3">
-				<p>Ako yung tipong tao na madalas mong nakikitang nakapolo t-shirt  at palaging may baon na panyo. Yung tipong tao na walang pake sa buhok kung ito'y magulo. Yung tipong tao na kapag tinanong, palaging tugon ay iling at tango. At yung tipong tao na palaging nakaupo sa harapan dahil ang paningin ay malabo.</p><p>Ngunit hindi ako yung tipong tao na naka eyeglass at antisosyal ang pagkatao. Hindi ako yung tipong nagaaral nang mabuti at palaging nakikilahok sa klase.</p><p>Ako ay isa lamang pangkaraniwang estudyante na mahilig magbasa ng libro, mapag-isa, makinig ng kanta, matuto ng iba't ibang wika at minsan sinusubokang gumawa ng tula.</p>Marami akong gustong masubukan sa buhay ngunit pera ang pangunahing hadlang. Alam kong malabong masubukan at makamtan, lalong-lalo na sa estado ng aking kasalukuyan.<br><br>Kaya ako napadpad dito dahil kahit papaano natatamasa ko ang kaluguran at pagkasabik na dito ko lang nararanasan.</p>
+				Shuffle
+				<div class="progress">
+				  <div class="progress-bar" role="progressbar" aria-valuenow="70"
+				  aria-valuemin="0" aria-valuemax="50" style="width:50%">
+				    Intermediate
+				  </div>
 				</div>
-			</div>
-			<br>
-			<div id="KabanataI">	
-				<audio  class="rounded-pill" style="width: 100%;" controls>
-			        <source src="audios/libro.ogg" type="audio/ogg">
-			        <source src="audios/libro.mp3" type="audio/mpeg">
-			        Your browser does not support the audio element.
-			    </audio>
-				<div class="texthead"><h6 class="text-center border p-2 mb-0"><a class="atexthead" href="KabanataI.html">Kabanata I: Libro at Kwintas</a></h6></div>
-				<div class="postcontent p-3">
-				<p>Pagmulat ng aking mga mata nanginginig at hindi ko magawang maigalaw ang aking buong katawan.<br><br>May madulas at mabulang likido ang lumabas mula sa aking tenga at isang napakatulis na siyap naman ang aking narinig.<br><br>Mga ilang sandali pa ang lumipas, biglang may sumaksak sa aking binti at nagawa ko nang maigalaw ang buo kong katawan. Walang alinlangan kong tinangal ang nakatusok na patalim sa binti ko, ngunit nang tingnan ko ito; wala man lang bakas ng dugo ang dumanak mula rito.<br><br>Isinantabi ko muna ang nasaksihan ko at dali-daling sinundan ang sumaksak sa akin. Sa tulong ng mga yapak nito ay naabutan ko siyang huminto-- <a href="KabanataI.html">See More...</a><br></p>
+				Modern/Hiphop
+				<div class="progress">
+				  <div class="progress-bar" role="progressbar" aria-valuenow="70"
+				  aria-valuemin="0" aria-valuemax="50" style="width:50%">
+				   Intermediate
+				  </div>
 				</div>
-			</div>
-			<br>
-			<div id="KabanataII">
-				<video width="100%" controls>
-			        <source src="videos/holdon.ogg" type="video/ogg">
-			        <source src="videos/holdon.mp4" type="video/mp4">
-			        Your browser does not support the audio element.
-			    </video>
-			    <div class="texthead"><h6 class="text-center border p-2 mb-0"><a class="atexthead" href="KabanataII.html">Kabanata II: Trahedya</a></h6></div>
-			    <div class="postcontent p-3">
-			    <p>Pagkatapos ng klase naisipan namin ni Andrew at Kevin na pumunta sa libary. May gagawin silang pananaliksik sa isang major subject nila kaya sinabayan ko na lang sila rito dahil wala naman akong gagawin.</p><p>Unang tapak ko pa lang sa library ay agad bumati sa akin ang napaka pamilyar na amoy.</p><p>Kaaya-ayang amoy. Pakiramdam ko ay galing ito sa mga lebrong natatamaan ng bentilador.</p><p>Sandali akong napatigil nang makita ang kabuuan ng library. Malawak ito gaya noong dinadala ako rito ng aking mga magulang. Kahit ang pagkakalagay ng mga gamit dito ay nasa ganoon pa ring posisyon. Kahit ang silyang tumba-tumba na nakalagay lang sa gilid ng librarian ay nandoon pa rin. Ito yung madalas kong ginagamit habang hinihintay ang aking mga magulang. Minsan kasi ay natatagalan sila rito at kung hahanapin ko naman ay laging hindi ko nakikita. Kaya minsan din akong nagagabiha dito sa paghihintay. Subalit hindi ako nakaramdam ng pagkainip dahil parati akong may kalaro na babae. Hindi naman kami pinapagalitan ng katiwala rito ng aklatan dahil pamangkin ng aking ina noon ang nagbabantay rito. . .<a href="KabanataI.html">See More...</a><br></p>
+				Festival Dance
+				<div class="progress">
+				  <div class="progress-bar" role="progressbar" aria-valuenow="70"
+				  aria-valuemin="0" aria-valuemax="75" style="width:100%">
+				    Expert	
+				  </div>
 				</div>
-			</div>
-			<br>
-			<div id="KabanataIII">
-			    <video  width="100%" controls>
-	            	<source src="videos/astralplane.ogg" type="video/ogg">
-	            	<source src="videos/astralplane.mp4" type="video/mp4">
-	            	Your browser does not support the audio element.
-	       		</video>
-	       		<div class="texthead"><h6 class="text-center border p-2 mb-0"><a class="atexthead" href="KabanataIII.html">Kabanata III: Astral Plane</a></h6></div>
-	       		<div class="postcontent p-3">
-	       		<p>Habang naglalakad ay bahagya kaming napatingin sa kalangitan nang makita naming nagkakagulo ang mga ibon at ang mga uwak naman ay nakalambitin sa poste.</p><p>Sa 'di inaasahang pangyayari lumindol nang malakas kasabay nito ang malakas na pabugso-bugso ng hangin. Paglabas ng mga estudyante at guro ay patungo ito sa aming kinatatayuan.</p><p>Gumalaw ang lupa, umatras ang mga sasakyan, at nataranta nang husto ang lahat; nagsisigawan, nagkagulo ang mga ibon, nagsidasalan ang ilan, at nagkabanggaan ang mga sasakyan.</p><p>Ang eksena na ito ay kasing tulad nang napanaginipan ni Kevin at ang imaheng nakita ko sa libro. . .<a href="KabanataI.html">See More...</a><br></p>
-	       		</div>
-	       	</div>
-	       	<br>
-	       	<div id="KabanataIV">
-	       		<audio  class="rounded-pill" style="width: 100%;" controls>
-			        <source src="audios/powerfulAlpha.ogg" type="audio/ogg">
-			        <source src="audios/powerfulAlpha.mp3" type="audio/mpeg">
-			        Your browser does not support the audio element.
-			    </audio>
-			    <div class="texthead"><h6 class="text-center border p-2 mb-0"><a class="atexthead" href="KabanataI.html">Kabanata IV: Daga</a></h6></div>
-			    <div class="postcontent p-3">
-			    <p>May naririnig akong mga boses na hindi ko nakikita at bigla kong naalala ang realidad.</p><p>"Scott!"</p><p>"Scooot!"</p><p>"Gumising ka na!" malakas na tili ni Andrew dahilan ng pagmulat ko. Napaatras naman ako bigla nang makita ang muka niya.</p><p>"Andrew, a-anong nangyari sa m-mukha mo?. . .<a href="KabanataI.html">See more...</a><br></p>
+				<h1 class="mt-5">Programming</h1>
+				HTML
+				<div class="progress">
+				  <div class="progress-bar" role="progressbar" aria-valuenow="70"
+				  aria-valuemin="0" aria-valuemax="75" style="width:100%">
+				    Expert	
+				  </div>
 				</div>
-			</div>
-			<br>
-			<div id="Sana">
-			    <audio  class="rounded-pill" style="width: 100%;" controls>
-                <source src="audios/ciki.ogg" type="audio/ogg">
-                	<source src="audios/ciki.mp3" type="audio/mpeg">
-                	Your browser does not support the audio element.
-             	</audio>
-             	<div class="texthead"><h6 class="text-center border p-2 mb-0"><a class="atexthead" href="Poems.html">Sana</a></h6></div>
-             	<div class="postcontent p-3">
-             	<p>Sana dumating yung araw na makilala kita</p><p>Talagang ninanais kong makausap ka</p><p>Aalamin ko kung bakit ka ganiyan</p><p>Napaka misteryoso ng iyong katangian</p><p>Lalapitan, kakausapin, ngunit ano ang aking sasabihin?</p><p>Yayain, kikilalanin ngunit ang lahat ng iyon ay napakahirap gawin</p>
-             	</div>
-            </div>
-            <br>
-            <div id="Elastiko">
-             	<img src="images/png/elastiko.png" width="100%">
-             	<div class="texthead"><h6 class="text-center border p-2 mb-0 mt-1"><a class="atexthead" href="KabanataI.html">Elastiko</a></h6></div>
-             	<div class="postcontent p-3">
-             	<p>Dahil sa marupok mong pagkatao</p><p>Elastikong nababanat palubog itong nararamdaman ko para sayo</p><p>Lukob ng malambot at pabagubado kong katangian</p><p>Iniwasiwas ng matulis mong pag-aalinlangan</p><p>Masakit. Mahapdi. Ngunit maaari ko bang masubokan?</p><p>Ang pagdikitin at patibayin ang marupok mong santinakpan.</p><p>Agosto 27, 2018</p><p>Ginawa ko ang tulang ito upang ipahayag ang aking nararamdaman noong nalaman ko na wala na talaga akong pag-asang magustohan sa isa kong matalik na kaibigan.</p><p>Tangap ko naman na matagal na niya akong gusto at matagal na itong naglaho. Ngunit sa aking kaloob-looban, sa tingin ko nagaalinlangan siyang sabihin ang katotohanan sa kadahilanang hindi pa siya handa. Hindi pa siya handa sa ano mang bagay na maaaring mangyari kapag sinabi na niya ang totoo. Ewan ko ba kung 'yun talaga ang totoo basta ngayon mas ikabubuti na sigurong itigil ang nararamdaman ko para sa kaniya.</p><p>Kaya bilang pamamaalam sa kaniya kasabay ng bawat letra ng tulang pinamagatan "Elastiko," nakaukit sa kauna-unahang titik sa taludtod nito ang kanyang apilyedo.</p>
-            	</div>
-            </div>
-            <br>
-            <div id="tadhana">
-             	<img src="images/jpeg/tadhanaOPaghanga.jpg" width="100%">
-             	<div class="texthead"><h6 class="text-center border p-2 mb-0 mt-1"><a class="atexthead" href="poems.html">Tadhana o Paghanga</a></h6></div>
-             	<div class="postcontent p-3">
-             	<p>Noong araw ng Disyembre</p><p>Ako'y nagsisimbang gabi</p><p>Nakita ko yung babae</p><p>Na ngayo'y naging kaklase</p><p>Lampas langit akong natuwa</p><p>Halos hindi na makapaniwala</p><p>Araw-araw ko siyang napanaginipan</p><p>Sa ngayo'y araw-araw ko na siyang na titignan</p><p>Ito ba'y matatawag na tadhana? O isa lang itong paghanga?</p><p>Ano ba ang aking pipiliin?</p><p>Lalaliman ko ba ang aking pagtingin?</p><p>Kahit sa huli lalong sasakit rin.</p><p>O aking ititigil?</p><p>Para hindi na masyadong masakit sa damdamin</p><p>June 2016</p>
-            	</div>
-            </div>
-            <br>
-            <div id="Bulalakaw">
-             	<img src="images/jpeg/Bulalakaw.jpg" width="100%">
-             	<div class="texthead"><h6 class="text-center border p-2 mb-0 mt-1"><a class="atexthead" href="poems.html">Bulalakaw</a></h6></div>
-             	<div class="postcontent p-3">
-             	<p>Ako'y nasa lupa</p><p>Ika'y nasa langit</p><p>Ako ay pangit</p><p>Ikaw ay marikit</p><p>Bihirang makakita</p><p>Ng kawangis mong linikha</p><p>Nakakalula, nakakamangha-</p><p>ng Pagmasdan ang iyong mukha</p><p>Meron kang katulad</p><p>Iyon ay bulalakaw</p><p>Tulad ng bulalakaw</p><p>Pagtingin agad na pumanaw</p><p>Kahit saglit lang natanaw</p><p>October 15, 2017</p>
-            	</div>
-            </div>
-            <br>
-            <div id="kalikasan">
-             	<img src="images/jpeg/kalikasan.jpg" width="100%">
-				<div class="texthead"><h6 class="text-center border p-2 mb-0 mt-1"><a class="atexthead" href="poems.html">Kalikasan</a></h6></div>
-				<div class="postcontent p-3">
-				 <p>Sa Tunog may Kapayapaan,</p><p>Dinadama ng kalooban,</p><p>May Ningning sa Bituin,</p><p>Kumikislap sa Paningin,</p><p>Pagpatak ng Ulan,</p><p>Pagsingaw ang Dahilan,</p><p>Sa Langit may Ulap,</p><p>Hangin ay Linalanghap,</p><p>May Buhay sa Tubig,</p><p>Sa Halaman Dinidilig,</p><p>Nalalagas ang Dahon,</p><p>Sa paglipas ng panahon,</p><p>Paggalaw ng Oras,</p><p>Nakaraa'y Lilipas,</p><p>Pagdaan ng Bukas,</p><p>Alaala'y Kukupas,</p><p>Sa Puso may Kirot,</p><p>Tinitibok ng Lungkot,</p><p>Galit sa katotohanan,</p><p>Itinatago sa Kasinungalingan,</p><p>Binibigkas ang Salita,</p><p>Isinusulat ng Makata,</p><p>Bakas ng Tinta,</p><p>Sa Kalooban Makikita</p><p>Oktubre 23, 2017</p>
+				CSS
+				<div class="progress">
+				  <div class="progress-bar" role="progressbar" aria-valuenow="70"
+				  aria-valuemin="0" aria-valuemax="75" style="width:100%">
+				    Expert	
+				  </div>
 				</div>
-			</div>
-			<div id="Takbo">
-				 <img src="images/jpeg/oras.jpg" width="100%">
-				 <div class="texthead"><h6 class="text-center border p-2 mb-0 mt-1"><a class="atexthead" href="poems.html">Takbo ng Panahon</a></h6></div>
-				<div class="postcontent p-3">
-				 <p>Paano ako magiging masaya?</p><p>'Pag hindi ko gusto ang aking kasama</p><p>Paano ako makikisama?</p><p>Kung pakiramdam ko ako'y hindi malaya</p><p>Inaaksaya bawat araw at buwan</p><p>Sa kakaisip ng kinabukasan</p><p>Na Malabo nang masilayan</p><p>Na kasama ko kayo, kaibigan</p><p>Isang buwan parang taon</p><p>Sa kakahintay sa pagdaan ng panahon</p><p>Na tayo ay makapag tipon</p><p>at mapagusapan ang darating na graduation</p><p>tuwing tayo'y magkasama kahit saglit</p><p>Puso ko ay lalong sumasakit</p><p> Sinusulit bawat sandali</p><p>Dahil ang oras ay napakaikli</p><p>October 20, 2017</p>
+				Javascript
+				<div class="progress">
+				  <div class="progress-bar" role="progressbar" aria-valuenow="70"
+				  aria-valuemin="0" aria-valuemax="75" style="width:50%">
+				  Intermediate	
+				  </div>
 				</div>
-			</div>
-			<div id="ulan">
-				 <img src="images/jpeg/ulan.jpg" width="100%">
-				 <div class="texthead"><h6 class="text-center border p-2 mb-0 mt-1"><a class="atexthead" href="poems.html">Ulan</a></h6></div>
-				 <div class="postcontent p-3">
-				 <p>Habang umu-ulan patak ng tubig</p><p>Masarap pakingan</p><p>Simoy ng hangin</p><p>Napakarsariwang damhin</p><p>Masarap matulog</p><p>Kahit na kumukulog</p><p>Ang iba ay naiinis sa kakatiis</p><p>Dahil hindi makakaalis</p><p>O kaya'y nakakadungis</p><p>Bakit ba hindi maiintindihan?</p><p>O kaya'y maunawan ng ilan?</p><p>Ang kagandahan ng ulan</p><p>Na hindi parating napagdadaanan</p><p>Subukan kaya nilang Pakingan,</p><p>Pagmasdan, tignan, at sabayan,</p><p>para sa ganoon maunawan itong lubusan</p><p>October 20, 2017</p>
+				PHP
+				<div class="progress">
+				  <div class="progress-bar" role="progressbar" aria-valuenow="70"
+				  aria-valuemin="0" aria-valuemax="75" style="width:50%">
+				  Intermediate	
+				  </div>
 				</div>
-			</div>
-			<div id="Pagkamuhi">
-             	<img src="images/jpeg/pagkamuhi.jpg" width="100%">
-             	<div class="texthead"><h6 class="text-center border p-2 mb-0 mt-1"><a class="atexthead" href="KabanataI.html">Pagkamuhi</a></h6></div>
-             	<div class="postcontent p-3">
-             	<p>Palihim kong itinatago</p><p>ang sekreto mong iniingatan</p><p>Gusto kitang magbago</p><p>pero ayaw kitang masaktan</p><br><p>Sekretong ikinikimkim</p><p>na maghahasik ng lagim</p><p>Madaming napeperwisyo</p><p>ginawa mo na itong bisyo!</p><br><p>Ano ba talaga ang kanilang kasalanan?</p><p>Bakit mo sila sinasaktan?</p><p>Kung anu-ano na lang ang iyong dahilan</p><p>hindi na kita maunawaan!</p><br><p>Puso mong walang awa</p><p>ugali mong ako'y sawang sawa</p><p>sinasaktan kahit kapwa</p><p>itigil mo na ang iyong pinagagawa!</p><br><p>October 19, 2017</p>
-            	</div>
-            </div>
-			<div id="Sufokante">
-				 <img src="images/jpeg/sufo.jpg" width="100%">
-				 <div class="texthead"><h6 class="text-center border p-2 mb-0 mt-1"><a class="atexthead"	 href="poems.html">Sufokante</a></h6></div>
-				 <div class="postcontent p-3">
-				 <p>Parents always give comfort</p><p>But Sometimes it hurts,</p><p>Shelter, food, education,</p><p>But never felt this so called "attention."</p><p>Am always trying to adapt</p><p>But always end up of falling apart</p><p>So hard to convince people</p><p>With different principle of their own</p><p>Suffocate inside a coffin</p><p>Breathing fine but mentally screaming</p><p>Traped inside a prison</p><p>I could escape but I chose to hold on</p><p>Afraid that everyone will know </p><p>A real me that never been shown</p><p>But one day, hoping someone will come</p><p>Embrace my negativity and what I am</p><p>In the right place at the right time</p>
+				MySQL
+				<div class="progress">
+				  <div class="progress-bar" role="progressbar" aria-valuenow="70"
+				  aria-valuemin="0" aria-valuemax="75" style="width:50%">
+				  Intermediate	
+				  </div>
 				</div>
-			</div>
-			</div>
-			<div class="col-sm-3 text-justify">
-					
-				<div class="texthead"><h6 class="text-center border p-2 mb-0"><a class="atexthead" href="sufokante.html">Post</a></h6></div>
-				<a href="Sufokante.html"><img class="rounded-circle float-left m-2" width="45px" src="images/jpeg/sufo.jpg" ></a>
-				<div class="postcontent p-2">
-				<p>Sufokante <br>June 20, 2019</p>
-				<p>"Mahirap magtiwala sa isang tao lalo na't ito ang dahilan kung bakit tayo nasaktan noon. Ngunit minsan, kailangan nating buksan ang puso't isipan at pakinggan ang panig ng iba. Dahil mahirap na kung maulit muli ang pagkakamali mo noon pa." <br>Sufokante</p>
+				C
+				<div class="progress">
+				  <div class="progress-bar" role="progressbar" aria-valuenow="70"
+				  aria-valuemin="0" aria-valuemax="75" style="width:50%">
+				  Intermediate	
+				  </div>
 				</div>
-				<br>
-				<div class="postcontent p-2">
-				<a href="Sufokante.html"><img class="rounded-circle float-left m-2" width="45px" src="images/jpeg/sufo.jpg" ></a>
-				<p>Sufokante <br>January 1, 2019</p><p>My new year resolution this year is to continue writing story and poem regardless of my (terrible) way of writing. I know I am not fluent in english and tagalog but I won't let that difficulty hinder my ambition to write. I will strive hard and focus my heart and mind into every piece of my work. </p><p>As for now, I'm still thinking of a new plot of my story and I hope It will run smoothly. Happy new year once again haha.</p>
-				<br>
-				</div>
-				<br>
-					<a href="sufokante.html">Go to Sufokante...</a>
-					<a href="https://twitter.com/sufokante" ><img src="images/png/twitter.png" width="30px"></a>
-					<a href="https://facebook.com/sufokante"><img src="images/png/fb.png" width="30px;"></a>
-					<a href="https://wattpad.com/sufokante"><img src="images/jpg/wattpad.jpg" width="30px"></a>
-					<br>
-					<a href="home.html">Contact Us</a>
-					<a href="#">About Us</a>
-					<a href="#">Privacy Policy</a>
-					<br><br>
-					<p>Copyright &copy; 2019 by Ernan Sudario</p>
 			</div>
 		</div>
-	</body>
-</body>
+		<div class="col-lg-8">
+		<div class="border">
+			<div class="container">
+
+			<div class="row">
+				<div class="col-lg-6" style="box-shadow: 5px 10px 18px #888888;">
+				<div id="chartContainer" style="height: 300px; width: 100%;" ></div><br>
+				</div>
+				<div class="col-lg-6" style="box-shadow: 5px 10px 18px #888888;">
+				<div id="chartContainer1" style="height: 300px; width: 100%;"></div>
+				</div>
+			</div>	
+			<br>
+			<div class="row">	
+				<div class="col-lg-12" style="box-shadow: 5px 10px 18px #888888;">
+				<div id="chartContainer2" style="height: 300px; width: 100%;" ></div><br>
+				</div>
+			</div>
+			<br>
+		</div>
+	</div>
+	</div>
+	</div>
+		<br>
+	<script src="js/charts.js"></script>
+	<script src="https://canvasjs.com/assets/script/jquery-1.11.1.min.js"></script>
+	<script src="https://canvasjs.com/assets/script/jquery.canvasjs.min.js"></script>
+  	<script src="popper.min.js"></script>
+  	<script src="bootstrap.min.js"></script>
+  	<footer class="container-fluid p-3 text-center">
+  		<h2>&copy; Copyright 2020 Sufokante</h2>
+  	</footer>
+  	</body>
 </html>
